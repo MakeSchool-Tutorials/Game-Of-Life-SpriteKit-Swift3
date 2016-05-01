@@ -30,7 +30,7 @@ The core simulation will happen inside the grid and you will be creating your ow
 
 > [action]
 > Set the *Custom Class* to `Grid`
-> ![Xcode scene resize](../Tutorial-Images/xcode_spritekit_grid_custom_class.png)
+> ![Xcode grid custom class](../Tutorial-Images/xcode_spritekit_grid_custom_class.png)
 
 #User Interface buttons
 

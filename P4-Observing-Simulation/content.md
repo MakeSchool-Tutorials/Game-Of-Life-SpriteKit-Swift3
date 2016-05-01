@@ -86,12 +86,7 @@ var gridNode: Grid!
 > Then add your connections in `didMoveToView(...)`:
 >
 ```
-/* Connect UI scene objects */
-stepButton = childNodeWithName("stepButton") as! MSButtonNode
-populationLabel = childNodeWithName("populationLabel") as! SKLabelNode
-generationLabel = childNodeWithName("generationLabel") as! SKLabelNode
-playButton = childNodeWithName("playButton") as! MSButtonNode
-pauseButton = childNodeWithName("pauseButton") as! MSButtonNode
+gridNode = childNodeWithName("gridNode") as! Grid
 ```
 >
 

@@ -24,7 +24,7 @@ Try placing a few live cells and then hitting the next button to run one round. 
 
 In this tutorial, you will learn how to:
 
-- Subclass *SKSpriteNode* and build a self contained simulation node
+- Subclass *SKSpriteNode* and build a simulation node
 - Programmatically generate a grid of sprites
 - Handle touch input
 - Manipulate a 2D array

@@ -164,7 +164,7 @@ You can build a simple scheduler using *SKActions*, let's look at how to impleme
 let delay = SKAction.waitForDuration(0.5)
 >
 /* Call the stepSimulation() method to advance the simulation */
-let callMethod = SKAction.performSelector("stepSimulation", onTarget: self)
+let callMethod = SKAction.performSelector(#selector(GameScene.stepSimulation), onTarget: self)
 >
 /* Create the delay,step cycle */
 let stepSequence = SKAction.sequence([delay,callMethod])

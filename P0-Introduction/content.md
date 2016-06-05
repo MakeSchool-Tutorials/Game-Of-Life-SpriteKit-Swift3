@@ -1,5 +1,5 @@
 ---
-title: Conway's Game of Life
+title: "Conway's Game of Life"
 slug: introduction
 ---
 

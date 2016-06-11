@@ -17,7 +17,7 @@ slug: new-spritekit-project
 > Once the download is complete, unpack the folder.
 > Click on the *Assets.xcassets* folder and drag across the assets.
 >
-> ![Xcode add assets](../Tutorial-Images/xcode_add_utils.png)
+> ![Xcode add utils](../Tutorial-Images/xcode_add_assets.png)
 
 These assets were designed with the iPhone 5 retina resolution.
 
@@ -29,7 +29,7 @@ SpriteKit is missing some useful functionality, thankfully we've bundled some to
 > Download the [MakeSchool Utilities](../Utils.zip), unpack and drag the folder into the project.
 > Ensure *Copy items if needed* is checked.
 >
-> ![Xcode add utils](../Tutorial-Images/xcode_add_assets.png)
+> ![Xcode add assets](../Tutorial-Images/xcode_add_utils.png)
 
 Your project structure should hopefully look similar to this:
 

@@ -66,6 +66,8 @@ The *Creature* class will be another subclass of *SKSpriteNode*
 > Replace the contents of this file with:
 >
 ```
+import SpriteKit
+>
 class Creature: SKSpriteNode {
 >    
     /* Character side */

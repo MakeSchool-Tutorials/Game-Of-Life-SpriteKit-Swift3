@@ -13,11 +13,11 @@ slug: new-spritekit-project
 ##Importing Resources
 
 > [action]
-> Download the [Game of Life Art Pack](../assets.zip) we created for you.
+> Download the [Game of Life Art Pack](https://github.com/MakeSchool-Tutorials/Game-Of-Life-SpriteKit-Swift/raw/master/assets.zip) we created for you.
 > Once the download is complete, unpack the folder.
 > Click on the *Assets.xcassets* folder and drag across the assets.
 >
-> ![Xcode add utils](../Tutorial-Images/xcode_add_assets.png)
+> ![Xcode add assets](../Tutorial-Images/xcode_add_assets.png)
 
 These assets were designed with the iPhone 5 retina resolution.
 
@@ -26,10 +26,10 @@ These assets were designed with the iPhone 5 retina resolution.
 SpriteKit is missing some useful functionality, thankfully we've bundled some together for you.  
 
 > [action]
-> Download the [MakeSchool Utilities](../Utils.zip), unpack and drag the folder into the project.
+> Download the [MakeSchool Utilities](https://github.com/MakeSchool-Tutorials/Game-Of-Life-SpriteKit-Swift/raw/master/Utils.zip), unpack and drag the folder into the project.
 > Ensure *Copy items if needed* is checked.
 >
-> ![Xcode add assets](../Tutorial-Images/xcode_add_utils.png)
+> ![Xcode add utils](../Tutorial-Images/xcode_add_utils.png)
 
 Your project structure should hopefully look similar to this:
 

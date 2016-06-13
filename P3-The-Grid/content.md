@@ -102,7 +102,7 @@ class Creature: SKSpriteNode {
 
 The code above should be mostly familiar to you.  All instances of the *Creature* class will be created in code, you are setting the `init()` to use the *bubble.png* asset and then calling the parent *SKSpriteNode* with *super.init* to initialize everything as normal for a *SKSpriteNode*.
 
-There is one two important property addition sin your *Creature* class:
+There are two important property additions in your *Creature* class:
 
 - **isAlive**: Is the creature alive or dead? If dead you want to hide it using the *hidden* property.
 - **neighborCount**: How many creatures immediately (one block) surround the creature?
@@ -211,10 +211,10 @@ Finally, it's time.  Run your game... It should hopefully look like this.
 
 The grid is full of creatures! It would be nice to have control over the initial seed state so let's look at adding touch controls to the grid.
 
-You should change the creatures to be dead by default and the players touch will make the creature at that grid position come to life.
+You should change the creatures to be dead by default and the player's touch will make the creature at that grid position come to life.
 
 > [action]
-> Set `creature.isAlive = true` to `creature.isAlive = false`
+> Change `creature.isAlive = true` to `creature.isAlive = false`
 
 You want to implement the following behavior in `touchesBegan(...)`:
 

@@ -152,7 +152,7 @@ Great job!
 
 The simulation works and now you want to let it run, it's not much fun spamming the step button.  What you need is a way to schedule the `stepSimulation()` method to run say every `0.5` seconds.
 
-You could use the standard *NSTimer*.  However, this timer would be outside of the SpriteKit*render cycle and could cause problems, you need a scheduler that sits within the SpriteKit render cycle.  
+You could use the standard *NSTimer*.  However, this timer would be outside of the SpriteKit render cycle and could cause problems, you need a scheduler that sits within the SpriteKit render cycle.  
 
 You can build a simple scheduler using *SKActions*, let's look at how to implement this.
 
@@ -213,6 +213,7 @@ Run your game...
 Congratulations you've completed *Game of Life*, give the person next to you a high five.
 
 You learnt to:
+
 - Control your simulation
 - Build a simulation scheduler using *SKActions*
 

@@ -55,15 +55,15 @@ import SpriteKit
 
 class GameScene: SKScene {
 
-    override func didMoveToView(view: SKView) {
+    override func didMoveToView(to view: SKView) {
         /* Setup your scene here */
     }
 
-    override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
+    override func touchesBegan(_ touches: Set<UITouch>, withEvent event: UIEvent?) {
        /* Called when a touch begins */
     }
 
-    override func update(currentTime: CFTimeInterval) {
+    override func update(_ currentTime: CFTimeInterval) {
         /* Called before each frame is rendered */
     }
 }

@@ -26,7 +26,7 @@ class Grid: SKSpriteNode {
     var cellWidth = 0
     var cellHeight = 0
 >    
-    override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
+    override func touchesBegan(_ touches: Set<UITouch>, withEvent event: UIEvent?) {
         /* Called when a touch begins */
 >        
         /* There will only be one touch as multi touch is not enabled by default */
@@ -171,7 +171,7 @@ The `addCreatureAtGrid(...)` method, this should perform the following tasks:
 > [solution]
 >
 ```
-func addCreatureAtGrid(x x: Int, y: Int) {
+func addCreatureAtGrid(x: Int, y: Int) {
     /* Add a new creature at grid position*/
 >
     /* New creature object */

@@ -212,7 +212,7 @@ Run your game...
 
 Congratulations you've completed *Game of Life*, give the person next to you a high five.
 
-You learnt to:
+You learned to:
 
 - Control your simulation
 - Build a simulation scheduler using *SKActions*

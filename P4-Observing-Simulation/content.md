@@ -58,11 +58,11 @@ var pauseButton: MSButtonNode!
 >
 ```
 /* Connect UI scene objects */
-stepButton = childNodeWithName("stepButton") as! MSButtonNode
-populationLabel = childNodeWithName("populationLabel") as! SKLabelNode
-generationLabel = childNodeWithName("generationLabel") as! SKLabelNode
-playButton = childNodeWithName("playButton") as! MSButtonNode
-pauseButton = childNodeWithName("pauseButton") as! MSButtonNode
+stepButton = childNode(withName: "stepButton") as! MSButtonNode
+populationLabel = childNode(withName: "populationLabel") as! SKLabelNode
+generationLabel = childNode(withName: "generationLabel") as! SKLabelNode
+playButton = childNode(withName: "playButton") as! MSButtonNode
+pauseButton = childNode(withName: "pauseButton") as! MSButtonNode
 ```
 >
 

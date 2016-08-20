@@ -33,7 +33,7 @@ class Grid: SKSpriteNode {
         for touch in touches {
 >          
             /* Grab position of touch relative to the grid */
-            let location  = touch.locationInNode(self)
+            let location  = touch.location(in: self)
         }
     }
 >    

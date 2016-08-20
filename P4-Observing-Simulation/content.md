@@ -195,12 +195,12 @@ Your scheduler is ready to go, you just need to add the final button handlers.
 >
 ```
 /* Setup play button selected handler */
-playButton.selectedHandler = {
+playButton.selectedHandler = { [unowned self] in
     self.paused = false
 }
 >
 /* Setup pause button selected handler */
-pauseButton.selectedHandler = {
+pauseButton.selectedHandler = { [unowned self] in
     self.paused = true
 }
 ```

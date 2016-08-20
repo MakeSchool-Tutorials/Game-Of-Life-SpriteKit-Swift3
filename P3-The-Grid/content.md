@@ -74,7 +74,7 @@ class Creature: SKSpriteNode {
     var isAlive: Bool = false {
         didSet {
             /* Visibility */
-            hidden = !isAlive
+            isHidden = !isAlive
         }
     }
 >    
@@ -84,7 +84,7 @@ class Creature: SKSpriteNode {
     init() {
         /* Initialize with 'bubble' asset */
         let texture = SKTexture(imageNamed: "bubble")
-        super.init(texture: texture, color: UIColor.clearColor(), size: texture.size())
+        super.init(texture: texture, color: UIColor.clear, size: texture.size())
 >
         /* Set Z-Position, ensure it's on top of grid */
         zPosition = 1

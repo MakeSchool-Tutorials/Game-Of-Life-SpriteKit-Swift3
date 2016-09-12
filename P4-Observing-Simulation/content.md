@@ -54,15 +54,15 @@ var playButton: MSButtonNode!
 var pauseButton: MSButtonNode!
 ```
 >
-> Then add your connections in `didMoveToView(...)`:
+> Then add your connections in `didMove(toView: ...)`:
 >
 ```
 /* Connect UI scene objects */
-stepButton = childNodeWithName("stepButton") as! MSButtonNode
-populationLabel = childNodeWithName("populationLabel") as! SKLabelNode
-generationLabel = childNodeWithName("generationLabel") as! SKLabelNode
-playButton = childNodeWithName("playButton") as! MSButtonNode
-pauseButton = childNodeWithName("pauseButton") as! MSButtonNode
+stepButton = childNode(withName: "stepButton") as! MSButtonNode
+populationLabel = childNode(withName: "populationLabel") as! SKLabelNode
+generationLabel = childNode(withName: "generationLabel") as! SKLabelNode
+playButton = childNode(withName: "playButton") as! MSButtonNode
+pauseButton = childNode(withName: "pauseButton") as! MSButtonNode
 ```
 >
 
@@ -83,10 +83,10 @@ To access the `evolve()` method and counter properties of the *Grid* class you w
 var gridNode: Grid!
 ```
 >
-> Then add your connections in `didMoveToView(...)`:
+> Then add your connections in `didMove(toView: ...)`:
 >
 ```
-gridNode = childNodeWithName("gridNode") as! Grid
+gridNode = childNode(withName: "gridNode") as! Grid
 ```
 >
 
@@ -121,7 +121,7 @@ You need to add a *selectedHandler* for the button, this should simply call the 
 <!-- -->
 
 > [solution]
-> Add the following to `didMoveToView(...)`:
+> Add the following to `didMove(toView: ...)`:
 >
 ```
 /* Setup testing button selected handler */
@@ -157,7 +157,7 @@ You could use the standard *NSTimer*.  However, this timer would be outside of t
 You can build a simple scheduler using *SKActions*, let's look at how to implement this.
 
 > [action]
-> Add the following code to `didMoveToView(...)`
+> Add the following code to `didMove(toView: ...)`
 >
 ```
 /* Create an SKAction based timer, 0.5 second delay */
@@ -191,16 +191,16 @@ Your scheduler is ready to go, you just need to add the final button handlers.
 <!-- -->
 
 > [solution]
-> Add the following to the end of the `didMoveToView(...)` method:
+> Add the following to the end of the `didMove(toView: ...)` method:
 >
 ```
 /* Setup play button selected handler */
-playButton.selectedHandler = {
+playButton.selectedHandler = { [unowned self] in
     self.paused = false
 }
 >
 /* Setup pause button selected handler */
-pauseButton.selectedHandler = {
+pauseButton.selectedHandler = { [unowned self] in
     self.paused = true
 }
 ```

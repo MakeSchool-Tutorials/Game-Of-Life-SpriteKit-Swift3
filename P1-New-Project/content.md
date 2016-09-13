@@ -40,10 +40,11 @@ Your project structure should hopefully look similar to this:
 The game assets were designed for landscape orientation, so you should ensure that the game will not accidentally use portrait.
 
 > [action]
-> Open *info.plist* and expand the list at the bottom.
-> Notice the *iPad orientation* values, remove any **Portrait** options.
+> Open the target settings settings.
 >
-> ![Xcode plist](../Tutorial-Images/xcode_info_plist.png)
+> Uncheck any **Portrait** options and check the **Landscape** options.
+>
+> ![Xcode Target Settings](../Tutorial-Images/xcode_target_settings.png)
 >
 
 #Clean project

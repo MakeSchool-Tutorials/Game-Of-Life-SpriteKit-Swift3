@@ -10,7 +10,7 @@ The "game" is a zero-player game, meaning that its evolution is determined by it
 The game assets were designed with the iPhone 5 retina resolution in mind, let's modify the scene size to work with this design resolution.
 
 > [action]
-> Open *GameScene.sks*, *Zoom Out* the scene and set the *Size* to `(568,320)`
+> Open *GameScene.sks*, *Zoom Out* the scene, set the *Size* to `(568,320)`, set the *Anchor Point* to `(0,0)`, click on the "Hello, World!" label, and remove it by pressing the `delete` key.
 >
 > ![Xcode scene resize](../Tutorial-Images/xcode_spritekit_size_scene.png)
 

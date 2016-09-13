@@ -36,7 +36,3 @@ In this tutorial, you will learn how to:
 ![Conway's Game of Life Simulation](../Tutorial-Images/animated_gameplay.gif)
 
 Time to get started with a new SpriteKit project!
-
-#Feedback
-
-If you have feedback on this tutorial or find any mistakes, please open issues on the [GitHub Repository](https://github.com/MakeSchool-Tutorials/Game-of-Life-SpriteKit-Swift).

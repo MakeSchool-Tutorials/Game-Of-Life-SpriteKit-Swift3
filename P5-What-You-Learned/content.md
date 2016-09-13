@@ -26,6 +26,6 @@ Let's take a look at what you have learned.
 
 #Solution
 
-[Download Game of Life](https://github.com/MakeSchool-Tutorials/Game-Of-Life-SpriteKit-Swift-Solution).
+Download the [Game of Life solution](https://github.com/MakeSchool-Tutorials/Game-Of-Life-SpriteKit-Swift-Solution/archive/swift3.zip).
 
 ![GitHub Cat](https://static.makegameswith.us/gamernews_images/TVZ2mTmQpl/labtocat.png)

@@ -31,11 +31,8 @@ class Grid: SKSpriteNode {
         /* Called when a touch begins */
 >        
         /* There will only be one touch as multi touch is not enabled by default */
-        for touch in touches {
-            
-            /* Grab position of touch relative to the grid */
-            let location  = touch.location(in: self)
-        }
+        let touch = touches.first!
+        let location = touch.location(in: self)
     }
 >    
     /* You are required to implement this for your subclass to work */
@@ -133,7 +130,7 @@ var gridArray = [[Creature]]()
 The next step required is to initialize the *gridArray*, you already know the *row* and *column* sizes. A simple 
 `for loop` through all the *rows/columns* in the *gridArray* will allow you to do this.
 
-##Adding a creature
+## Adding a creature
 
 The `addCreatureAtGrid(...)` method, this should perform the following tasks:
 
@@ -254,7 +251,7 @@ creature.isAlive = !creature.isAlive
 
 Run your game... You should be able to design your own seed pattern now.
 
-#Counters
+# Counters
 
 Before you begin working the simulation, let's add some counters for *population* and *generation*.
 
@@ -272,22 +269,25 @@ var generation = 0
 var population = 0
 ```
 
-#The simulation
+# The simulation
 
 There are two important steps to implement in the Game of Life simulation.
 
-- 1. Calculate every creature's immediate living neighbors
-- 2. Apply the game of life ruleset
- - If a cell has less than two live neighbors, it dies
- - If it has more than three neighbors, it dies
- - If a live cell has exactly two or three neighbors, it stays alive
- - If a dead cell has exactly three neighbors, it comes to life
+1. Calculate every creature's immediate living neighbors
+2. Apply the game of life ruleset
+    - If a cell has less than two live neighbors, it dies
+    - If it has more than three neighbors, it dies
+    - If a live cell has exactly two or three neighbors, it stays alive
+    - If a dead cell has exactly three neighbors, it comes to life
 
-##Calculating neighbors
+## Calculating neighbors
 
-For every creature in the grid, you'll need to count every surrounding creature.  Imagine a 3x3 grid with your creature at the center. How would you approach this?
+For every creature in the grid, you'll need to count every surrounding creature.  Imagine a 3x3 grid with your 
+creature at the center. How would you approach this?
 
-You will want to check both rows and columns that are +1/-1 from your central creature. There are a few caveats of course, you need to be careful near the extremes of the grid as stepping outside the bounds of the array will result in a crash. Also the central creature should not be counted.
+You will want to check both rows and columns that are +1/-1 from your central creature. There are a few caveats of 
+course, you need to be careful near the extremes of the grid as stepping outside the bounds of the array will result 
+in a crash. Also the central creature should not be counted.
 
 > [action]
 > See if you can setup the first step in the `countNeighbors()` method.
@@ -345,9 +345,10 @@ func countNeighbors() {
 
 Please read through the code comments.
 
-##Applying the ruleset
+## Applying the ruleset
 
-Now that you can calculate every creatures *neighborCount*, you now need to apply the rule set above to simulate the Game of Life.  Again you need to loop through every creature in the grid and apply the ruleset.
+Now that you can calculate every creatures *neighborCount*, you now need to apply the rule set above to simulate the 
+Game of Life. Again you need to loop through every creature in the grid and apply the ruleset.
 
 > [action]
 > See if you can implement an `updateCreatures()` method.
@@ -393,11 +394,13 @@ func updateCreatures() {
 
 Read through the comments, there shouldn't be any surprises in here.
 
-You could just as easily use an `if` statement when it comes to checking the `neighborCount`.  The *Switch statement* is very powerful in Swift and allows for a lot of flexibility.
+You could just as easily use an `if` statement when it comes to checking the `neighborCount`.  The *Switch statement* 
+is very powerful in Swift and allows for a lot of flexibility.
 
-You may have noticed the *population* counter is being updated, you will be using this value to update the population label in the *GameScene*.
+You may have noticed the *population* counter is being updated, you will be using this value to update the population 
+label in the *GameScene*.
 
-#Summary
+# Summary
 
 Congratulations, you've implemented the game logic for Conway's Game of Life!
 You've also levelled up your array handling skillz.

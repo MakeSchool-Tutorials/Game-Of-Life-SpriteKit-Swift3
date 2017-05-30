@@ -10,7 +10,7 @@ Let's take a look at what you have learned.
 
 ![The game](../cover.png)
 
-##What you learned
+## What you learned
 
 - **The Grid Class**: Sub classing *SKSpriteNode* and built a self contained simulation node.
 
@@ -24,7 +24,7 @@ Let's take a look at what you have learned.
 
 - **Game of Life ruleset**: Translating the Game of Life ruleset into code logic.
 
-#Solution
+# Solution
 
 Download the [Game of Life solution](https://github.com/MakeSchool-Tutorials/Game-Of-Life-SpriteKit-Swift-Solution/archive/swift3.zip).
 

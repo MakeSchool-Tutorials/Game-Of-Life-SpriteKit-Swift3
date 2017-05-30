@@ -38,19 +38,19 @@ handle this later on.
 
 # User Interface buttons
 
-##Adding the play button
+## Adding the play button
 
 > [action]
 > Drag *play.png* onto the scene and set *Position* to `(88,283)`
 > Set *Name* to `playButton` and set *Custom Class* to `MSButtonNode`
 
-##Adding the pause button
+## Adding the pause button
 
 > [action]
 > Drag *pause.png* onto the scene and set *Position* to `(88,241)`
 > Set *Name* to `pauseButton` and set *Custom Class* to `MSButtonNode`
 
-##Adding the step button
+## Adding the step button
 
 This button will serve as a handy way to test the game, allowing you to step through the simulation one iteration at a time.  We're going to use the microscope asset, consider it an easter egg for the player.
 
@@ -58,16 +58,16 @@ This button will serve as a handy way to test the game, allowing you to step thr
 > Drag *microscope.png* onto the scene and set *Position* to `(81,60)`
 > Set *Name* to `stepButton` and set *Custom Class* to `MSButtonNode`
 
-#Simulation information
+# Simulation information
 
 Typically in Conway's game of life you want to display the population and generation of the creatures.  The generation refers to the number of times the simulation has ran so far.
 
-##Adding the backdrop
+## Adding the backdrop
 
 > [action]
 > Drag *balloon.png* onto the scene and set *Position* to `(87,172)`
 
-##Population label
+## Population label
 
 > [action]
 > Drag a *Label* onto the scene and set *Position* to `(87,189)`
@@ -83,24 +83,24 @@ use whatever you think looks good.**
 
 > ![Xcode SpriteKit label setup](../Tutorial-Images/xcode_spritekit_label_setup.png)
 
-##Generation label
+## Generation label
 
 You have the population label, now add the `Generation` label.  
 
 > [action]
 > Add a `Generation` label, Set the *Position* to `(87,158)`
 
-##Dynamic label counters
+## Dynamic label counters
 
 Next you will need two labels to display the values for population and generation respectively.
 
-###Population
+### Population
 
 > [action]
 > *Copy/Paste* the `Population` label, set *Position* to `(90,173)` and set *Text* to `0`.
 > You will need a code connection for this population counter, set *Name* to `populationLabel`
 
-###Generation
+### Generation
 
 > [action]
 > See if you can repeat this process and add a `generationLabel` at `(90,144)`
@@ -109,6 +109,6 @@ Your finished UI should hopefully look like this:
 
 ![Xcode GameScene UI](../Tutorial-Images/xcode_gamescene_ui.png)
 
-#Summary
+# Summary
 
 You've set the stage for the game and built the user interface, in the next chapter you will work on the *Grid* custom class which will perform the heavy lifting in this simulation.

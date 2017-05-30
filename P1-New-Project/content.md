@@ -3,10 +3,11 @@ title: Setting up a new project
 slug: new-spritekit-project
 ---
 
-#Create a new SpriteKit project
+# Create a new SpriteKit project
 
 > [action]
-> Create a new *Game* project in Xcode named `Gameoflife` and check the *Language* is set to `Swift` and *Game Technology* is set to `SpriteKit`.
+> Create a new *Game* project in Xcode named `Gameoflife` and check the *Language* is set to `Swift` and 
+> *Game Technology* is set to `SpriteKit`.
 >
 > ![Xcode new project](../Tutorial-Images/xcode_new_project.png)
 

@@ -3,36 +3,40 @@ title: Setting up the user interface
 slug: user-interface
 ---
 
-The "game" is a zero-player game, meaning that its evolution is determined by its initial state, requiring no further input. One interacts with the Game of Life by touching the grid to setup the initial configuration. Unlike the previous tutorials there are no in-game controls as such. Let's build the scene.
+The "game" is a zero-player game, meaning that its evolution is determined by its initial state, requiring no further 
+input. One interacts with the Game of Life by touching the grid to setup the initial configuration. Unlike the previous
+tutorials there are no in-game controls as such. Let's build the scene.
 
-#Setting the scene
+# Setting the scene
 
-The game assets were designed with the iPhone 5 retina resolution in mind, let's modify the scene size to work with this design resolution.
+The game assets were designed to work with the iPhone, let's modify the scene size to work with this 
+design resolution.
 
 > [action]
 > Open *GameScene.sks*, *Zoom Out* the scene, set the *Size* to `(568,320)`, set the *Anchor Point* to `(0,0)`, click on the "Hello, World!" label, and remove it by pressing the `delete` key.
 >
 > ![Xcode scene resize](../Tutorial-Images/xcode_spritekit_size_scene.png)
 
-##Adding the background
+## Adding the background
 
 > [action]
 > Drag *background.png* onto the scene and snap to the center of the *GameScene*.
 > Set *Z-Position* to `-1` to ensure the background is always at the back.
 
-#Adding the grid
+# Adding the grid
 
 > [action]
 > Drag *grid.png* onto the scene, set *Anchor Point* to `(0,0)` bottom-left.
-> Set *Position* to `(175,6)` and set *Name* to `gridNode`
+> Set *Position* to `(181,6)` and set *Name* to `gridNode`
 
-The core simulation will happen inside the grid and you will be creating your own *SKSpriteNode* subclass to handle this later on.
+The core simulation will happen inside the grid and you will be creating your own *SKSpriteNode* subclass to 
+handle this later on.
 
 > [action]
 > Set the *Custom Class* to `Grid`
 > ![Xcode grid custom class](../Tutorial-Images/xcode_spritekit_grid_custom_class.png)
 
-#User Interface buttons
+# User Interface buttons
 
 ##Adding the play button
 

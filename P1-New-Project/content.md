@@ -20,14 +20,14 @@ slug: new-spritekit-project
 >
 > ![Xcode add assets](../Tutorial-Images/xcode_add_assets.png)
 
-These assets were designed with the iPhone 5 retina resolution.
+These assets were designed with the 4" retina resolution.
 
 ## Adding extra functionality
 
-SpriteKit doesn't include a button class you 
+SpriteKit doesn't include a button class you will have to add your own!
 
 > [action]
-> Download the [MakeSchool Utilities](https://github.com/MakeSchool-Tutorials/Game-Of-Life-SpriteKit-Swift/raw/master/Utils.zip), unpack and drag the file 'MSButtonNode.swift' into the project.
+> Download the [MakeSchool Utilities](https://github.com/MakeSchool-Tutorials/Game-Of-Life-SpriteKit-Swift3/raw/master/Utils.zip), unpack and drag the file 'MSButtonNode.swift' into the project.
 > Ensure *Copy items if needed* is checked.
 >
 > ![Xcode add utils](../Tutorial-Images/xcode_add_utils.png)

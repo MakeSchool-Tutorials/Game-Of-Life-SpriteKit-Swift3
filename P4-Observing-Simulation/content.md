@@ -8,9 +8,10 @@ The next step is being able to run each iteration of the simulation, you're goin
 
 Once you know your simulation is valid, you will build your own scheduler to iterate the simulation every `0.5` seconds.
 
-#Step by step
+# Step by step
 
-Let's add an `evolve()` method to the *Grid* class, this will wrap up the `countNeighbors()` and `updateCreatures()` methods. You also want to track the current `generation` of the simulation.
+Let's add an `evolve()` method to the *Grid* class, this will wrap up the `countNeighbors()` and 
+`updateCreatures()` methods. You also want to track the current `generation` of the simulation.
 
 > [action]
 > Add the following method to the *Grid* class:
@@ -33,7 +34,7 @@ func evolve() {
 
 That's the *Grid* class complete!
 
-#Connecting the UI
+# Connecting the UI
 
 It's time to code connect the UI you built in chapter 2, this process should be familiar to you by now.
 
@@ -66,9 +67,10 @@ pauseButton = childNode(withName: "pauseButton") as! MSButtonNode
 ```
 >
 
-#Connecting the Grid
+# Connecting the Grid
 
-To access the `evolve()` method and counter properties of the *Grid* class you will need to create a code connection for it.
+To access the `evolve()` method and counter properties of the *Grid* class you will need to create a code connection 
+for it.
 
 > [action]
 > Add a code connection for the *gridNode*.
@@ -83,14 +85,14 @@ To access the `evolve()` method and counter properties of the *Grid* class you w
 var gridNode: Grid!
 ```
 >
-> Then add your connections in `didMove(toView: ...)`:
+> Then add your connections in `didMove(to view: ...)`:
 >
 ```
 gridNode = childNode(withName: "gridNode") as! Grid
 ```
 >
 
-#The step button
+# The step button
 
 It would be great to test the simulation step before it becomes scheduled.  You're going to add a `stepSimulation` method
 to call the *Grid* class `evolve()` method and update the UI counter labels in the *GameScene* using the *Grid* counters.
@@ -133,7 +135,7 @@ stepButton.selectedHandler = {
 
 Run your game... You should be able to add some creatures and step the simulation, keep an eye on the population and generation counters.
 
-#Testing the simulation
+# Testing the simulation
 
 How do you know if the simulation is accurate?
 
@@ -148,7 +150,7 @@ Run your game again and try this pattern...
 
 Great job!
 
-#Adding a scheduler
+# Adding a scheduler
 
 The simulation works and now you want to let it run, it's not much fun spamming the step button.  What you need is a way to schedule the `stepSimulation()` method to run say every `0.5` seconds.
 
@@ -157,30 +159,31 @@ You could use the standard *NSTimer*.  However, this timer would be outside of t
 You can build a simple scheduler using *SKActions*, let's look at how to implement this.
 
 > [action]
-> Add the following code to `didMove(toView: ...)`
+> Add the following code to `didMove(to view: ...)`
 >
 ```
 /* Create an SKAction based timer, 0.5 second delay */
-let delay = SKAction.waitForDuration(0.5)
+let delay = SKAction.wait(forDuration: 0.5)
 >
 /* Call the stepSimulation() method to advance the simulation */
-let callMethod = SKAction.performSelector(#selector(GameScene.stepSimulation), onTarget: self)
+let callMethod = SKAction.perform(#selector(stepSimulation), onTarget: self)
 >
 /* Create the delay,step cycle */
 let stepSequence = SKAction.sequence([delay,callMethod])
 >
 /* Create an infinite simulation loop */
-let simulation = SKAction.repeatActionForever(stepSequence)
+// let simulation = SKAction.repeatActionForever(stepSequence)
+let simulation = SKAction.repeatForever(stepSequence)
 >
 /* Run simulation action */
-self.runAction(simulation)
+self.run(simulation)
 >
 /* Default simulation to pause state */
-self.paused = true
+self.isPaused = true
 ```
 >
 
-##Play/Pause
+## Play/Pause
 
 Your scheduler is ready to go, you just need to add the final button handlers.
 
@@ -191,17 +194,17 @@ Your scheduler is ready to go, you just need to add the final button handlers.
 <!-- -->
 
 > [solution]
-> Add the following to the end of the `didMove(toView: ...)` method:
+> Add the following to the end of the `didMove(to view: ...)` method:
 >
 ```
 /* Setup play button selected handler */
 playButton.selectedHandler = { [unowned self] in
-    self.paused = false
-}
+    self.isPaused = false
+    }
 >
-/* Setup pause button selected handler */
-pauseButton.selectedHandler = { [unowned self] in
-    self.paused = true
+    /* Setup pause button selected handler */
+    pauseButton.selectedHandler = { [unowned self] in
+        self.isPaused = true
 }
 ```
 >

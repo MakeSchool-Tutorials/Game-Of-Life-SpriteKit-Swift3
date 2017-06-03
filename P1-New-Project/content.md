@@ -3,14 +3,15 @@ title: Setting up a new project
 slug: new-spritekit-project
 ---
 
-#Create a new SpriteKit project
+# Create a new SpriteKit project
 
 > [action]
-> Create a new *Game* project in Xcode named `Gameoflife` and check the *Language* is set to `Swift` and *Game Technology* is set to `SpriteKit`.
+> Create a new *Game* project in Xcode named `Gameoflife` and check the *Language* is set to `Swift` and 
+> *Game Technology* is set to `SpriteKit`.
 >
 > ![Xcode new project](../Tutorial-Images/xcode_new_project.png)
 
-##Importing Resources
+## Importing Resources
 
 > [action]
 > Download the [Game of Life Art Pack](https://github.com/MakeSchool-Tutorials/Game-Of-Life-SpriteKit-Swift/raw/master/assets.zip) we created for you.
@@ -21,12 +22,12 @@ slug: new-spritekit-project
 
 These assets were designed with the iPhone 5 retina resolution.
 
-##Adding extra functionality
+## Adding extra functionality
 
-SpriteKit is missing some useful functionality, thankfully we've bundled some together for you.  
+SpriteKit doesn't include a button class you 
 
 > [action]
-> Download the [MakeSchool Utilities](https://github.com/MakeSchool-Tutorials/Game-Of-Life-SpriteKit-Swift/raw/master/Utils.zip), unpack and drag the folder into the project.
+> Download the [MakeSchool Utilities](https://github.com/MakeSchool-Tutorials/Game-Of-Life-SpriteKit-Swift/raw/master/Utils.zip), unpack and drag the file 'MSButtonNode.swift' into the project.
 > Ensure *Copy items if needed* is checked.
 >
 > ![Xcode add utils](../Tutorial-Images/xcode_add_utils.png)
@@ -35,9 +36,10 @@ Your project structure should hopefully look similar to this:
 
 ![Xcode project structure](../Tutorial-Images/xcode_project_structure_new.png)
 
-#Device orientation
+# Device orientation
 
-The game assets were designed for landscape orientation, so you should ensure that the game will not accidentally use portrait.
+The game assets were designed for landscape orientation, so you should ensure that the game will not accidentally 
+use portrait.
 
 > [action]
 > Open the target settings settings.
@@ -47,7 +49,7 @@ The game assets were designed for landscape orientation, so you should ensure th
 > ![Xcode Target Settings](../Tutorial-Images/xcode_target_settings.png)
 >
 
-#Clean project
+# Clean project
 
 To ensure a clean starting point, ensure your *GameScene.swift* reads as follows:
 
@@ -70,6 +72,7 @@ class GameScene: SKScene {
 }
 ```
 
-#Summary
+# Summary
 
-Great, now you have a new project ready to begin building the Game of Life.  In the next chapter you will focus on creating the user interface.
+Great, now you have a new project ready to begin building the Game of Life.  In the next chapter you will focus on 
+creating the user interface.

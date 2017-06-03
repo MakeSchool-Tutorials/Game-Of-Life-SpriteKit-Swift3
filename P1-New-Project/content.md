@@ -14,7 +14,7 @@ slug: new-spritekit-project
 ## Importing Resources
 
 > [action]
-> Download the [Game of Life Art Pack](https://github.com/MakeSchool-Tutorials/Game-Of-Life-SpriteKit-Swift/raw/master/assets.zip) we created for you.
+> Download the [Game of Life Art Pack](https://github.com/MakeSchool-Tutorials/Game-Of-Life-SpriteKit-Swift3/raw/master/assets.zip) we created for you.
 > Once the download is complete, unpack the folder.
 > Click on the *Assets.xcassets* folder and drag across the assets.
 >

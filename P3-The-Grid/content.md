@@ -16,7 +16,7 @@ The grid class will be a subclass of *SKSpriteNode*.
 >
 ```
 import SpriteKit
-
+>
 class Grid: SKSpriteNode {
 >    
     /* Grid array dimensions */

@@ -193,10 +193,8 @@ func populateGrid() {
   }
 }
 ```
->
 
 Read through the comments, you loop through every entry in the grid and call the `addCreatureAtGrid(...)` method. 
-Now you just need to create this new method :]
 
 Great, one last step.  You need to call `populateGrid()` to perform this setup.
 

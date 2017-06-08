@@ -32,7 +32,7 @@ func evolve() {
 ```
 >
 
-That's the *Grid* class complete!
+That's it, the *Grid* class is complete!
 
 # Connecting the UI
 

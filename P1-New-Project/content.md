@@ -27,14 +27,10 @@ These assets were designed with the 4" retina resolution.
 SpriteKit doesn't include a button class you will have to add your own!
 
 > [action]
-> Download the [MakeSchool Utilities](https://github.com/MakeSchool-Tutorials/Game-Of-Life-SpriteKit-Swift3/raw/master/Utils.zip), unpack and drag the file 'MSButtonNode.swift' into the project.
+> Download the [MakeSchool Utilities](https://github.com/MakeSchool-Tutorials/Game-Of-Life-SpriteKit-Swift3/raw/master/Utils.zip), unpack and drag the file 'MSButtonNode.swift' into the project (we don't need the rest).
 > Ensure *Copy items if needed* is checked.
 >
 > ![Xcode add utils](../Tutorial-Images/xcode_add_utils.png)
-
-Your project structure should hopefully look similar to this:
-
-![Xcode project structure](../Tutorial-Images/xcode_project_structure_new.png)
 
 # Device orientation
 
@@ -42,7 +38,7 @@ The game assets were designed for landscape orientation, so you should ensure th
 use portrait.
 
 > [action]
-> Open the target settings settings.
+> Open the target settings.
 >
 > Uncheck any **Portrait** options and check the **Landscape** options.
 >
